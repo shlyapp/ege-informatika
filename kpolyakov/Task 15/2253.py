@@ -8,3 +8,4 @@ for A in range(1, k):
             break
     if (z):
         print(A)
+        break
