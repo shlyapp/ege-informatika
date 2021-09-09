@@ -6,3 +6,5 @@ for x in range(2):
             for w in range(2):
                 if (((y <= z) or ((not x) and w)) == (w == z)):
                     print(z, w, y, x)
+
+# zwyx
