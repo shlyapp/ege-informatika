@@ -1,10 +1,10 @@
-P = [i for i in range(2, 11)]
-Q = [i for i in range(6, 15)]
+P = [i for i in range(37, 61)]
+Q = [i for i in range(40, 78)]
 A = set(P+Q)
 counter = 0
 
 for x in A:
-    if ((x in A) <= (x in P)) or (x in Q):
+    if (x in P) <= (((x in Q) or not(x in A)) <= (not(x in P))):
         counter+=1
 
-print(counter-1)
+print(counter)
