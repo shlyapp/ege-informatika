@@ -7,4 +7,4 @@ for sys in range(3, 10):
         x = x//sys
     print(s[::-1], sys)
 
-# answer 16 (146 - 9 sys and 234 - 7 sys)
+# answer 16 (123 - 10 sys and 234 - 7 sys)
