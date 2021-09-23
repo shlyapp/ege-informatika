@@ -1,7 +1,7 @@
 
-for x in range(10, 20):
-    for y in range(10, 20):
-        for z in range(10, 20):
+for x in range(0, 20):
+    for y in range(0, 20):
+        for z in range(0, 20):
 
             s = '0' + '1'*x + '2'*y + '3'*z
             stroka = s
@@ -13,4 +13,5 @@ for x in range(10, 20):
             
             if s.count('1') == 30 and s.count('2') == 39 and s.count('3') == 42:
                 print(stroka.count('2'))
+                print(s)
                 break
