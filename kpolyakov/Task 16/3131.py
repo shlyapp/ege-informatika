@@ -1,4 +1,3 @@
-from typing import Counter
 counter = 0
 
 def F(n):
