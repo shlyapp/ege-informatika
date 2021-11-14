@@ -1,4 +1,6 @@
+from functools import lru_cache
 
+@lru_cache
 
 def F(start, end, counter = 0):
     if (start > end or start < 0 or counter > 30):
