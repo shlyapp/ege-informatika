@@ -12,7 +12,7 @@ def game(heaps):
     # Если Петя хотя бы одним ходом выиграывает
     if any(game(moves) == 'WIN' for moves in make_move(heaps)):
         return "P1"
-    # Если Петя всеми ходами привел Ваню к выигрышной позиции
+    # Если Петя хотя бы одним ходом привел Ваню к выигрышной ситуации
     if any(game(moves) == 'P1' for moves in make_move(heaps)):
         return "B1"
     
