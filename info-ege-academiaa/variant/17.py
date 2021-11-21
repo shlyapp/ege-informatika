@@ -8,6 +8,6 @@ suma = 0
 for element in data:
     if sum(map(lambda x: element % x == 0, divisors)) == 2:
         counter += 1
-        suma += element
+        suma += sum(map(int, str(element)))
 
 print(counter, suma)
