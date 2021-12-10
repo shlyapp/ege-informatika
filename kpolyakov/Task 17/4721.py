@@ -12,8 +12,8 @@ for element in data:
 for i in range(len(data) - 1):
     part = [data[i], data[i + 1]]
     a = list(map(lambda x: x > summa, part))
-    b = list(map(lambda x: abs(x) % 100 == 33, part))
-    if (a == [True, False] and b == [False, True]) or (b == [True, False] and a == [False, True]):
+    b = list(map(lambda x: x % 100 == 33, part))
+    if (a == [True, False] and (b == [False, True] or b == [True, True])) or ((b == [True, False] or b == [True, True]) and a == [False, True]):
         counter += 1
         minimum = min(minimum, sum(part))
 
