@@ -5,5 +5,3 @@ def search_divisors(num):
             divisors.add(i)
             divisors.add(num // i)
     return divisors
-
-print(search_divisors(3600))  
