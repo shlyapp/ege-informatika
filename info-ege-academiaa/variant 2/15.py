@@ -10,4 +10,5 @@ while True:
         break
     else:
         print(A)
+        break
     A += 1
