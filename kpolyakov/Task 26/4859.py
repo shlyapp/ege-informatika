@@ -23,3 +23,4 @@ for i in range(N - 1):
         counter = 1
 
 print(row_number, maximum)
+
