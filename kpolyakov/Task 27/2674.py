@@ -1,3 +1,4 @@
+
 with open('kpolyakov/Task 27/27-14b.txt') as file:
     N = int(file.readline())
     data = [int(file.readline()) for i in range(N)]
@@ -6,7 +7,7 @@ div = [0 for i in range(12)]
 
 for num in data:
     div[num % 12] += 1
-   
+
 counter = 0
 
 for i in range(7):
