@@ -1,18 +1,14 @@
-file = open('kompege/files/27A-2756.txt')
+file = open('kompege/files/27B-2756.txt')
 N = int(file.readline())
-m_12 = [0] * 12
+m = [0] * 100
 maximum = float('-inf')
 
 for i in range(N):
     num = int(file.readline())
-    ost = float('-inf')
-    if num % 12 != 0 and num % 100 < 12:
-        ost = 12 - num % 100
-    if num % 100 == 12: ost = 0
-    
-    maximum = max(m_12[ost] + num, maximum)
+    ost = 12 - num % 12 if num % 100 <= 12 else 112 - num % 100
+    if m[ost] > num and num + m[ost] > maximum:
+        maximum = num + m[ost]
 
-    m_12[num % 100 if num % 100 < 12] = max(m[num % 100])
-    
+    m[num % 100] = max(m[num % 100], num)
 
 print(maximum)
