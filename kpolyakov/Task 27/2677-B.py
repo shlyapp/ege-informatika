@@ -1,4 +1,4 @@
-file = open('kpolyakov/Task 27/27A-2677.txt')
+file = open('kpolyakov/Task 27/27B-2677.txt')
 N = int(file.readline())
 counter = 0
 k = [[0] * 2 for i in range(2)]
@@ -11,7 +11,7 @@ for i in range(N - 4):
     counter += k[1 - num % 2][0]
 
     next = buffer[0]
-    k[next % 2][0 if num % 13 == 0 else 1] += 1
+    k[next % 2][0 if next % 13 == 0 else 1] += 1
     buffer.append(num)
     buffer.pop(0)
 
